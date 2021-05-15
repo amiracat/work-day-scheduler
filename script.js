@@ -36,7 +36,7 @@ function setColor(element, color) {
     element.style.backgroundColor = color;
 }
 
-// trial n error
+// getting inputs from each hour
 let input9 = document.getElementById("text9");
 let input10 = document.getElementById("text10");
 let input11 = document.getElementById("text11");
@@ -61,7 +61,7 @@ let save17 = document.getElementById("button17");
 for (let i = 9; i < 18; i++) {
     document.getElementById("button" + i).addEventListener("click", saveData);
 }
-// note: `button${I}` - interpolated string
+// note for future: `button${I}` - interpolated string
 //add for loops for getting and storing localstorage.
 
 function saveData(event) {
@@ -88,7 +88,6 @@ function renderTasks() {
 
 //once whole document loads, run this function
 $(document).ready(renderTasks);
-
 
 //could look into:
 //using data attributes on button to only update for an individual hour/field. use ID
